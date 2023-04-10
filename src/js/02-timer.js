@@ -42,10 +42,10 @@ const options = {
           refs.seconds.textContent = `${addLeadingZero(seconds)}`;
 
         if (
-        Number(`${seconds}`) === 00 &&
-        Number(`${minutes}`) === 00 &&
-        Number(`${hours}`) === 00 &&
-        Number(`${days}`) === 00) {
+        Number(`${seconds}`) === 0 &&
+        Number(`${minutes}`) === 0 &&
+        Number(`${hours}`) === 0 &&
+        Number(`${days}`) === 0) {
           clearInterval(intervaId);
         }
         }, 1000);
