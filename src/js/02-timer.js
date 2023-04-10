@@ -42,7 +42,8 @@ const options = {
           refs.minutes.textContent = `${addLeadingZero(minutes)}`;
           refs.seconds.textContent = `${addLeadingZero(seconds)}`;
 
-        if (Number(`${seconds}`) === 00 &&
+        if (
+        Number(`${seconds}`) === 00 &&
         Number(`${minutes}`) === 00 &&
         Number(`${hours}`) === 00 &&
         Number(`${days}`) === 00) {
